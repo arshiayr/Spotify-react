@@ -1,1 +1,171 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: black;
+    color: white;
+    font-family: var(--body-font-stack);
+  }
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  border: 3px solid #121212;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255,
+      255,
+      255,
+      0.5);
+}
+
+@font-face {
+  font-family: SpotifyMixUI;
+  font-weight: 700;
+  font-display: swap;
+  unicode-range:
+    U + 20 -7E,
+    U + A0-AC,
+    U + AE-137,
+    U + 139 -148,
+    U + 14A -17E,
+    U + 18F,
+    U + 1A0 -1A1,
+    U + 1AF -1B0,
+    U + 1CD -1D4,
+    U + 1e6 -1e7,
+    U + 1F4 -1F5,
+    U + 1FA -1FF,
+    U + 218 -21B,
+    U + 226 -227,
+    U + 232 -233,
+    U + 237,
+    U + 259,
+    U + 2BC,
+    U + 2C6 -2C7,
+    U + 2D8 -2DD,
+    U + 300 -304,
+    U + 306 -30C,
+    U + 312,
+    U + 31B,
+    U + 323,
+    U + 326 -328,
+    U + 335 -338,
+    U + E3F,
+    U + 1C -1D,
+    U + 1e20 -1e21,
+    U + 1e24 -1e25,
+    U + 1e36 -1e37,
+    U + 1e44 -1e45,
+    U + 1e56 -1e57,
+    U + 1e62 -1e63,
+    U + 1e6C -1e6D,
+    U + 1e80 -1e85,
+    U + 1e8A -1e8D,
+    U + 1e92 -1e93,
+    U + 19eE,
+    U + 1EA0 -1EF9,
+    U + 2002 -2003,
+    U + 2009 -200A,
+    U + 2010 -2011,
+    U + 2013 -2015,
+    U + 2018 -201A,
+    U + 201C -201E,
+    U + 2020 -2022,
+    U + 2026,
+    U + 2030,
+    U + 2032 -2033,
+    U + 2039 -203A,
+    U + 2044,
+    U + 2070,
+    U + 2074 -2079,
+    U + 2080 -2089,
+    U + 20A6,
+    U + 20A9 -20AA,
+    U + 20AC,
+    U + 20B4,
+    U + 20B8 -20BA,
+    U + 20BD,
+    U + 20BF,
+    U + 2113,
+    U + 2116 -2117,
+    U + 2122,
+    U + 2126,
+    U + 2160 -2169,
+    U + 216C -216F,
+    U + 2190 -2193,
+    U + 2196 -2199,
+    U + 2202,
+    U + 2206,
+    U + 220F,
+    U + 2211 -2212,
+    U + 2215,
+    U + 221A,
+    U + 221E,
+    U + 222B,
+    U + 2248,
+    U + 2260,
+    U + 2264 -2265,
+    U + FB01-FB02,
+    U + FFFF;
+  src:
+    url(https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b79….woff2) format("woff2"),
+    url(https://encore.scdn.co/fonts/SpotifyMixUI-Bold-05392da….woff) format("woff");
+}
+
+:root {
+  --fallback-fonts:
+    Helvetica Neue, helvetica, arial, Hiragino Sans, Hiragino Kaku Gothic ProN,
+    Meiryo, MS Gothic;
+
+  --body-font-stack:
+    SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+}
+
+:root {
+
+  .encore-dark-theme,
+  .encore-dark-theme .encore-base-set {
+    --background-base: #121212;
+    --background-highlight: #1f1f1f;
+    --background-press: #000;
+    --background-elevated-base: #1f1f1f;
+    --background-elevated-highlight: #2a2a2a;
+    --background-elevated-press: #191919;
+    --background-tinted-base: #ffffff1a;
+    --background-tinted-highlight: #ffffff24;
+    --background-tinted-press: #ffffff36;
+    --text-base: #fff;
+    --text-subdued: #b3b3b3;
+    --text-bright-accent: #1ed760;
+    --text-negative: #f3727f;
+    --text-warning: #ffa42b;
+    --text-positive: #1ed760;
+    --text-announcement: #539df5;
+    --essential-base: #fff;
+    --essential-subdued: #7c7c7c;
+    --essential-bright-accent: #1ed760;
+    --essential-negative: #ed2c3f;
+    --essential-warning: #ffa42b;
+    --essential-positive: #1ed760;
+    --essential-announcement: #1278f2;
+    --decorative-base: #fff;
+    --decorative-subdued: #292929;
+  }
+}
