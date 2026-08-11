@@ -12,7 +12,12 @@ const Header = () => {
         </div>
       </a>
 
-      <input className="flex-1 max-w-md mx-4 px-4 py-2 bg-[#1f1f1f] text-white placeholder-gray-400 rounded-full border border-transparent focus:border-white focus:outline-none transition-colors" id="input-search" type="text" placeholder="What do you want to play?" />
+      <input
+        className="flex-1 max-w-md mx-4 px-4 py-2 bg-[#1f1f1f] text-white placeholder-gray-400 rounded-full border border-transparent focus:border-white focus:outline-none transition-colors"
+        id="input-search"
+        type="text"
+        placeholder="What do you want to play?"
+      />
 
       <div className="flex items-center gap-4 text-sm font-semibold text-gray-300">
         <a href="/premium" className="hover:text-white transition-colors">

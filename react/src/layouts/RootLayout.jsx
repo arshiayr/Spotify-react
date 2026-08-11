@@ -17,9 +17,7 @@ function RootLayout() {
 
         <div className="main-view flex-1 overflow-y-auto bg-[#121212] rounded-lg flex flex-col relative custom-scrollbar">
           <div className="main-view-container flex-1 p-6">
-
             <Outlet />
-
           </div>
 
           <div className="shrink-0">

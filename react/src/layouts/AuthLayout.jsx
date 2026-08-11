@@ -13,11 +13,21 @@ const AuthLayout = () => {
         <div class=" text-white p-4 text-center ">
           <p class="text-xs text-gray-400">
             This site is protected by reCAPTCHA and the Google
-            <a href="https://policies.google.com/privacy" class="underline" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://policies.google.com/privacy"
+              class="underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Privacy Policy
             </a>
             and
-            <a href="https://policies.google.com/terms" class="underline" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://policies.google.com/terms"
+              class="underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Terms of Service
             </a>
             apply.
